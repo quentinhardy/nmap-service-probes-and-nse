@@ -58,10 +58,8 @@ ports 21071, 21064
 
 
 # (..) --packet length
-# "4a43544c4343" and "444d544c4343" --Only 2 possibility for the Transport
-Packet ID
-# "0604444d4d4c" --Currently, only a single message layer protocol is
-defined (444d4d4c)
+# "4a43544c4343" and "444d544c4343" --Only 2 possibility for the Transport Packet ID
+# "0604444d4d4c" --Currently, only a single message layer protocol is defined (444d4d4c)
 match dam-connection
 m/^(..)(\x4a\x43\x54\x4c\x43\x43|\x44\x4d\x54\x4c\x43\x43)(.*)\x06\x04\x44\x4d\x4d\x4c/s
 p/ingres-dam/
