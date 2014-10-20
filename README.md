@@ -41,8 +41,7 @@ ingres-dam      21071/tcp       0.000654 #Data Access Messaging Protocol used by
 In the *nmap-service-probes* file, add this source code in order to detect the DAM protocol:
 ```bash
 ##############################NEXT PROBE##############################
-#Detect the Data Access Messaging Protocol (DAM) used by Ingres Data Access
-Server (iigcd)
+#Detect the Data Access Messaging Protocol (DAM) used by Ingres Data Access Server (iigcd)
 #"2300" --length of the following array +2
 #"4a43544c" --Transport packet ID
 #"4352" --Connection Request (ascii ‘CR’)
